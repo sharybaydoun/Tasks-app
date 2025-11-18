@@ -1,0 +1,55 @@
+h1{
+    color: hsl(2, 66%, 32%);
+
+}
+p{
+    font-size: 20px;
+    margin-bottom: 90px;
+}
+/* Navigation bar container */
+nav {
+    display: flex;                  /* horizontal layout */
+    justify-content: space-around;  /* spread tabs evenly */
+    background-color: pink;         /* dark background */
+    padding: 10px;                  /* spacing inside the bar */
+}
+
+/* Navigation links */
+nav a {
+    color: white;                   /* text color */
+    text-decoration: none;          /* remove underline */
+    font-size: 18px;                /* bigger text */
+}
+.home-image {
+    margin-top: 50px; 
+    height: 200px;   
+    width: 300px;           /* resize to uniform width */
+    margin: 10px;           /* spacing around images */
+    border-radius: 10px;    /* rounded corners */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* subtle shadow */
+    transition: transform 0.3s; /* smooth hover effect */
+}
+.home-images-container {
+    margin-top: 50px; 
+    display: flex;               /* arrange children horizontally */
+    justify-content: center;     /* center the whole row */
+    gap: 20px;                   /* space between images */
+    flex-wrap: wrap;             /* wrap to next line on small screens */
+    margin-top: 20px;
+}
+
+/* Button styling */
+.button {
+    margin-top: 90px;     /* space between images and button */
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;   /* round button */
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.hidden {
+  display: none;
+}

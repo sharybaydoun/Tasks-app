@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Practicing</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <header>
+      <nav>
+      <a href="#" class="nav-link" data-section="home">Home</a>
+      <a href="#" class="nav-link" data-section="tasks">Tasks</a>
+      <a href="#" class="nav-link" data-section="settings">Settings</a>
+    </nav>
+  </header>
+<main>
+   <section class="section home-section">
+    <h1>Welcome to Your Productivity Hub!</h1>
+    <p>
+        This is your personal space to organize tasks, manage settings, and boost your productivity.
+        Explore the features and make your workflow simple and efficient.
+    </p>
+    <div class="home-images-container"> <!-- Images from assets folder -->
+    <img class="home-image" src="assets/Planning-2.png" alt="Planning" >
+    <img class="home-image" src="assets/increase-productivity.webp" alt="Increase Productivity" >
+    <img class="home-image" src="assets/flat-illustration-secretary-s-day-celebration_23-2150229834.avif" alt="Tasks Management" >
+    </div>
+    <button class="button">Get Started</button>
+</section>
+
+  <section class="section tasks-section hidden">
+      <h2>Tasks</h2>
+        <button class="show-task-form-btn">Add Task</button>
+
+  <!-- Task Form (hidden initially) -->
+  <form class="task-form hidden" novalidate>
+    <label class="task-label">
+      Task Text
+      <input type="text" class="task-text" placeholder="Write a task here" aria-label="Task text">
+    </label>
+    <div class="task-form-buttons">
+      <button type="submit" class="submit-task-btn">Submit</button>
+      <button type="button" class="cancel-task-btn">Cancel</button>
+    </div>
+  </form>
+
+  <h3>Your Tasks:</h3>
+  <ul class="task-list" aria-live="polite"></ul>
+    </section>
+    
+    <!-- Settings section (hidden initially) -->
+    <section class="section settings-section hidden">
+      <h2>Settings</h2>
+      <!-- we’ll add profile inputs later -->
+    </section>
+  </main>
+
+  <script src="scripts/app.js"></script>
+</body>
+</html>
