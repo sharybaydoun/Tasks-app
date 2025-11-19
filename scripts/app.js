@@ -74,44 +74,6 @@ taskForm.addEventListener('submit', (e) => {
   // Hide the form after adding (optional)
   taskForm.classList.add('hidden');
 });
-
-// -----------------------
-// TASK ADDING
-// -----------------------
-const taskInput = document.querySelector('.task-text');
-const taskList = document.querySelector('.task-list');
-
-taskForm.addEventListener('submit', (e) => {
-  e.preventDefault();
-
-  const text = taskInput.value.trim();
-  if (text === "") return;
-
-  // Create task card
-  const li = document.createElement('li');
-  li.classList.add('task-item', 'not-done'); // default not done
-
-  // Create checkbox
-  const checkbox = document.createElement('input');
-  checkbox.type = 'checkbox';
-
-  // Create text span
-  const span = document.createElement('span');
-  span.textContent = text;
-
-  // Add checkbox + text to the task card
-  li.appendChild(checkbox);
-  li.appendChild(span);
-
-  // Append task card to the task list
-  taskList.appendChild(li);
-
-  // Clear input
-  taskInput.value = "";
-
-  // Hide the form after adding (optional)
-  taskForm.classList.add('hidden');
-});
 // -----------------------
 // TOGGLE DONE/NOT-DONE
 // -----------------------
