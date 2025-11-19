@@ -10,7 +10,7 @@ p{
 nav {
     display: flex;                  
     justify-content: space-around;  /* spread tabs evenly */
-    background-color: pink;        
+    background-color: hsl(0, 100%, 88%);        
     padding: 10px;                  /* spacing inside the bar */
 }
 
@@ -98,4 +98,38 @@ nav a {
   background-color: red;
   color: white;
 }
+.task-list {
+  padding: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;               /* bigger padding for a card look */
+  margin-top: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  list-style: none;            /* remove bullets */
+  font-size: 18px;
+  width: 100%;                 /* make it full width of container */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2); /* subtle card shadow */
+}
+
+/* Red for not done */
+.not-done {
+  background-color: red;
+}
+
+/* Green for done */
+.done {
+  background-color: #b3ffb3;
+}
+
+.task-item input[type="checkbox"] {
+  margin-right: 15px;
+  transform: scale(1.5); /* bigger checkbox */
+}
+
+
 
