@@ -101,6 +101,15 @@ settingsForm.addEventListener('submit', (e) => {
   userName.textContent = nameInput.value.trim() || "Not set";
   userEmail.textContent = emailInput.value.trim() || "Not set";
 });
+// -----------------------
+// GET STARTED BUTTON
+// -----------------------
+const getStartedBtn = document.querySelector('.button');
+
+getStartedBtn.addEventListener('click', () => {
+  showSection('tasks'); // navigates to tasks section
+});
+
 
 
 
