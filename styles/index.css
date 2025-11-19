@@ -1,6 +1,5 @@
 h1{
     color: hsl(2, 66%, 32%);
-
 }
 p{
     font-size: 20px;
@@ -129,6 +128,52 @@ nav a {
 .task-item input[type="checkbox"] {
   margin-right: 15px;
   transform: scale(1.5); /* bigger checkbox */
+}
+
+/* Settings form */
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.settings-form label {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.settings-form input {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  width: 100%;
+}
+
+/* User card */
+.user-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  max-width: 400px;
+}
+
+.user-card h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user-card p {
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+.user-card span {
+  font-weight: 600;
 }
 
 
