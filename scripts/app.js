@@ -112,6 +112,22 @@ taskForm.addEventListener('submit', (e) => {
   // Hide the form after adding (optional)
   taskForm.classList.add('hidden');
 });
+// -----------------------
+// TOGGLE DONE/NOT-DONE
+// -----------------------
+taskList.addEventListener('change', (e) => {
+  if (e.target.type === 'checkbox') {
+    const li = e.target.closest('li');
+    if (e.target.checked) {
+      li.classList.remove('not-done');
+      li.classList.add('done');
+    } else {
+      li.classList.remove('done');
+      li.classList.add('not-done');
+    }
+  }
+});
+
 
 
 
