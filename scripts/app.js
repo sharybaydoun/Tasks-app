@@ -89,6 +89,19 @@ taskList.addEventListener('change', (e) => {
     }
   }
 });
+const settingsForm = document.querySelector('.settings-form');
+const nameInput = document.querySelector('.settings-name');
+const emailInput = document.querySelector('.settings-email');
+const userName = document.querySelector('.user-name');
+const userEmail = document.querySelector('.user-email');
+const userTasks = document.querySelector('.user-tasks');
+
+settingsForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  userName.textContent = nameInput.value.trim() || "Not set";
+  userEmail.textContent = emailInput.value.trim() || "Not set";
+});
+
 
 
 
